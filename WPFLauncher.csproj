@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>WPFLauncher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net9.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="dialog\itemdownloadprogress.baml" />
+    <None Remove="pages\homepage.baml" />
+    <None Remove="dialog\addaccountdialog.baml" />
+    <None Remove="pages\settingspage.baml" />
+    <None Remove="pages\logspage.baml" />
+    <None Remove="mainwindow.baml" />
+    <None Remove="dialog\editaccountdialog.baml" />
+    <None Remove="pages\accountsmanagepage.baml" />
+    <None Remove="pages\itemlist.baml" />
+    <None Remove="app.baml" />
+    <None Remove="dialog\loginprogressdialog.baml" />
+    <EmbeddedResource Include="dialog\itemdownloadprogress.baml" LogicalName="dialog/itemdownloadprogress.baml" />
+    <EmbeddedResource Include="pages\homepage.baml" LogicalName="pages/homepage.baml" />
+    <EmbeddedResource Include="dialog\addaccountdialog.baml" LogicalName="dialog/addaccountdialog.baml" />
+    <EmbeddedResource Include="pages\settingspage.baml" LogicalName="pages/settingspage.baml" />
+    <EmbeddedResource Include="pages\logspage.baml" LogicalName="pages/logspage.baml" />
+    <EmbeddedResource Include="mainwindow.baml" LogicalName="mainwindow.baml" />
+    <EmbeddedResource Include="dialog\editaccountdialog.baml" LogicalName="dialog/editaccountdialog.baml" />
+    <EmbeddedResource Include="pages\accountsmanagepage.baml" LogicalName="pages/accountsmanagepage.baml" />
+    <EmbeddedResource Include="pages\itemlist.baml" LogicalName="pages/itemlist.baml" />
+    <EmbeddedResource Include="app.baml" LogicalName="app.baml" />
+    <EmbeddedResource Include="dialog\loginprogressdialog.baml" LogicalName="dialog/loginprogressdialog.baml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mcl.Core">
+      <HintPath>bundle/Mcl.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bundle/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="iNKORE.UI.WPF.Modern.Controls">
+      <HintPath>bundle/iNKORE.UI.WPF.Modern.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="iNKORE.UI.WPF.Modern">
+      <HintPath>bundle/iNKORE.UI.WPF.Modern.dll</HintPath>
+    </Reference>
+    <Reference Include="iNKORE.UI.WPF">
+      <HintPath>bundle/iNKORE.UI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="JS4399MC">
+      <HintPath>bundle/JS4399MC.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Platform">
+      <HintPath>bundle/GalaSoft.MvvmLight.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>bundle/NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
